@@ -1,0 +1,43 @@
+@import "../../base.scss";
+
+.nav {
+  @include font-Karla;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.item {
+}
+
+.link {
+  color: black;
+
+  &:hover {
+    color: $color-yellow;
+  }
+}
+
+.activeLink {
+  color: $color-yellow;
+  text-decoration: underline;
+}
+
+@media (max-width: 890px) {
+  .nav {
+    @include font-Karla;
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}

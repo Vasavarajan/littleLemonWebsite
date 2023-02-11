@@ -1,0 +1,67 @@
+@import "../../base.scss";
+
+.card {
+  @include font-Karla;
+  width: 290px;
+  height: 460px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  //justify-content: space-between;
+  //padding-bottom: 1rem;
+
+  background-color: $color-highlignt-light;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+
+  .image {
+    width: inherit;
+    height: 185px;
+
+    img {
+      width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .content {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+
+    flex-grow: 1;
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .title {
+        @include font-Markazi;
+        font-size: 24px;
+        color: #000000;
+      }
+
+      .price {
+        font-size: 16px;
+        color: $color-second-dark;
+        font-weight: bold;
+      }
+    }
+
+    .description {
+      font-size: 16px;
+      color: $color-green;
+    }
+  }
+
+  .cta {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}

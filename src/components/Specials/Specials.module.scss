@@ -1,0 +1,65 @@
+@import "../../base.scss";
+
+.specials {
+  width: 100%;
+  padding: 90px;
+  display: flex;
+  justify-content: center;
+
+  .inner {
+    width: 100%;
+    max-width: 950px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 45px;
+
+      .title {
+        @include font-Markazi;
+        font-size: 60px;
+        line-height: 72px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .specials {
+    padding: 30px;
+    .inner {
+      .header {
+        .title {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .specials {
+    .inner {
+      .header {
+        .title {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .specials {
+    .inner {
+      .header {
+        flex-direction: column-reverse;
+        .title {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

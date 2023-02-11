@@ -1,0 +1,32 @@
+@import "../../base.scss";
+
+.bookingPage {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+
+  min-height: calc(100vh - 110px);
+  background: url(../../assets/images/restaurant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .title {
+    @include font-Markazi;
+    font-size: 50px;
+    color: $color-yellow;
+    text-shadow: 2px -2px $color-green;
+    width: 100%;
+    text-align: center;
+    background: rgba($color: $color-green, $alpha: 0.7);
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .bookingPage {
+    .title {
+      font-size: 35px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../base.scss";
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-second-light;
+  padding: 110px 0;
+
+  .inner {
+    width: 100%;
+    //max-width: 790px; // for Carousel
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //gap: 40px;
+  }
+}
